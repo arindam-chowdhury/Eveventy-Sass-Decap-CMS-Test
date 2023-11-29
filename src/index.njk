@@ -1,0 +1,12 @@
+---
+title: "Demo Home Page"
+layout: "base.njk"
+---
+
+
+<h1>{{title}}</h1>
+<div class="main">
+    {% for card in collections.cardDetails %}
+        {% include "card.njk" %}
+    {% endfor %}
+</div>
